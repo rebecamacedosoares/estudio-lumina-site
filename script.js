@@ -46,7 +46,7 @@ themeToggle.addEventListener('click', () => {
 
 function setupInfiniteScroller() {
     const scroller = document.querySelector(".team-scroller-inner");
-    if (scroller) {
+    if (scroller && scroller.children.length > 0) {
         const scrollerContent = Array.from(scroller.children);
         scrollerContent.forEach(item => {
             const duplicatedItem = item.cloneNode(true);
